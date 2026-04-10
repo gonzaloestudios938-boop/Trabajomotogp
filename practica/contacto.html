@@ -1,0 +1,126 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | MotoGP World</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-red">MOTO</span><span class="logo-white">GP</span>
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pilotos.html">Pilotos</a></li>
+        <li><a href="equipos.html">Equipos</a></li>
+        <li><a href="circuitos.html">Circuitos</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="contacto-hero">
+      <h1>Contacto</h1>
+      <p>
+         ¿Llegaste hasta acá? Además de dejarte nuestro contacto, te invitamos a participar por un par de entradas para vivir MotoGP en persona.
+      </p>
+    </section>
+
+    <section class="contacto-container">
+
+      <div class="contacto-info">
+        <h2>Contactanos</h2>
+        <p><strong>Email:</strong> contactmotogpworld@gmail.com</p>
+        <p><strong>Teléfono:</strong> +54 11 1234-5678</p>
+        <p><strong>Ubicación:</strong> Buenos Aires, Argentina</p>
+      </div>
+
+      <div class="contacto-formulario">
+        <h2>Participá del sorteo</h2>
+
+        <form>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Tu email" required>
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+
+          <label for="provincia">Provincia</label>
+          <select id="provincia" name="provincia" required>
+            <option value="">Seleccionar</option>
+            <option value="buenos-aires">Buenos Aires</option>
+            <option value="cordoba">Córdoba</option>
+            <option value="santa-fe">Santa Fe</option>
+            <option value="mendoza">Mendoza</option>
+            <option value="otra">Otra</option>
+          </select>
+
+          <label>¿Cómo conociste MotoGP World?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="origen" value="instagram" required> Instagram</label>
+            <label><input type="radio" name="origen" value="youtube"> YouTube</label>
+            <label><input type="radio" name="origen" value="amigos"> Otro</label>
+          </div>
+
+          <label for="mensaje">Contanos, ¿por qué deberías ganarte el par de entradas?</label>
+          <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribí tu respuesta" required></textarea>
+
+          <div class="botones-formulario">
+            <button type="submit">Enviar</button>
+            <button type="reset" class="reset-btn">Restablecer</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h3>MotoGP World</h3>
+      <p>Seguinos en nuestras redes sociales</p>
+
+      <div class="footer-links">
+        <a href="https://www.instagram.com/motogp/">
+          <img src="./img/instagram.svg" alt="Instagram" class="social-icon">
+          Instagram
+        </a>
+
+        <a href="https://www.tiktok.com/@motogp">
+          <img src="./img/tiktok.svg" alt="TikTok" class="social-icon">
+          TikTok
+        </a>
+
+        <a href="https://www.youtube.com/user/MotoGP">
+          <img src="./img/Youtube.svg" alt="Youtube" class="social-icon">
+          Youtube
+        </a>
+      </div>
+
+      <p class="copyright">© 2026 MotoGP World</p>
+    </div>
+  </footer>
+
+</body>
+</html>

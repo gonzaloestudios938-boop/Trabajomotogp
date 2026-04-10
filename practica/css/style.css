@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-bottom: 2px solid #d00000;
+  z-index: 1000;
+}
+
+.logo a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.logo-red { color: #d00000; }
+.logo-white { color: white; }
+
+.nav-links { display: flex; gap: 30px; }
+.nav-links a { color: white; text-transform: uppercase; transition: 0.3s; }
+.nav-links a:hover { color: #d00000; }
+
+
+.page-banner {
+  text-align: center;
+  padding: 160px 20px 80px;
+  background: linear-gradient(to bottom, #1a1a1a, #0a0a0a);
+}
+
+.page-banner h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  color: #d00000;
+  margin-bottom: 15px;
+}
+
+
+.pilots-container,
+.teams-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Esto hace que entren varias por fila */
+  gap: 30px;
+  padding: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pilot-card,
+.team-card {
+  background-color: #151515;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 1px solid #222;
+}
+
+.pilot-card:hover,
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(208, 0, 0, 0.3);
+}
+
+.pilot-card img,
+.team-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.pilot-card h2,
+.team-card h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: #d00000;
+  padding: 20px 20px 10px;
+}
+
+.pilot-card p,
+.team-card p {
+  padding: 0 20px 25px;
+  color: #cccccc;
+}
+
+
+footer {
+  background-color: #111;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 2px solid #d00000;
+}
+
+.footer-content h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; 
+}
+
+.footer-links a {
+  color: white;
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #d00000;
+}
+
+
+.social-icon {
+  width: 22px; 
+  height: 22px;
+  transition: 0.3s;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row; /* Mantenemos la línea horizontal */
+    justify-content: space-between;
+    padding: 10px 15px; /* Bajamos los 60px a solo 15px para ganar mucho espacio */
+  }
+
+  .logo a {
+    font-size: 1.5rem; /* Achicamos el logo para que no ocupe media pantalla */
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row; /* Los links siguen uno al lado del otro */
+    gap: 10px;          /* Achicamos el espacio entre links (de 30px a 10px) */
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;  /* Letra más chica para que todos los links entren */
+    letter-spacing: 0;  /* Quitamos espacio entre letras si lo tenías */
+  }
+
+  .page-banner h1 { font-size: 3rem; }
+  .pilots-container, .teams-container { padding: 30px 20px; }
+}
