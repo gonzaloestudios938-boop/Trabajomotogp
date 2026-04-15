@@ -38,7 +38,7 @@
 .team-card p {
   font-size: 0.95rem;
 }
-
+/* Repositorio para celular*/
 @media (max-width: 768px) {
   .teams-section {
     padding: 20px 0 50px;

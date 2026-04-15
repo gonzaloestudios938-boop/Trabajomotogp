@@ -173,6 +173,7 @@
   background-color: #555;
 }
 
+/* Repositorio para celular*/
 @media (max-width: 900px) {
   .contacto-container {
     grid-template-columns: 1fr;

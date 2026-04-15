@@ -121,7 +121,7 @@
   line-height: 1.4;
 }
 
-/* RESPONSIVE CELULAR */
+/* RESPOSITORIO PARA CELULAR */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 3rem;

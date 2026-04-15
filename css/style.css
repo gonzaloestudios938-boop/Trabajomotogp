@@ -69,7 +69,7 @@ a {
 .pilots-container,
 .teams-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Esto hace que entren varias por fila */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Esto hace que entren varios en una fila */
   gap: 30px;
   padding: 60px;
   max-width: 1400px;
@@ -156,24 +156,24 @@ footer {
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: row; /* Mantenemos la línea horizontal */
+    flex-direction: row; 
     justify-content: space-between;
-    padding: 10px 15px; /* Bajamos los 60px a solo 15px para ganar mucho espacio */
+    padding: 10px 15px; 
   }
 
   .logo a {
-    font-size: 1.5rem; /* Achicamos el logo para que no ocupe media pantalla */
+    font-size: 1.5rem; /* Achicar  el logo para que no ocupe mucho */
   }
 
   .nav-links {
     display: flex;
-    flex-direction: row; /* Los links siguen uno al lado del otro */
-    gap: 10px;          /* Achicamos el espacio entre links (de 30px a 10px) */
+    flex-direction: row; /* Los links se siguen uno al lado del otro*/
+    gap: 10px;          /* Achicamos el espacio entre los links */
   }
 
   .nav-links a {
-    font-size: 0.8rem;  /* Letra más chica para que todos los links entren */
-    letter-spacing: 0;  /* Quitamos espacio entre letras si lo tenías */
+    font-size: 0.8rem;  /* Achique la letra para que todos los links entren */
+    letter-spacing: 0;  
   }
 
   .page-banner h1 { font-size: 3rem; }
